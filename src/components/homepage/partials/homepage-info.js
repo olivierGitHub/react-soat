@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/homepage.css'
 
-class HomepageInfo extends Component {
-
-  render() {
+function HomepageInfo(props) {
     return (
       <span>
-        <h4>{this.props.title}</h4>
-        <p>{this.props.description}</p>
+        <h4>{props.title}</h4>
+        <p>{props.description}</p>
       </span>
     )
-  }
 }
 
 export default HomepageInfo;
