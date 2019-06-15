@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/common/Navbar'
+import Footer from './components/common/Footer'
+import { BrowserRouter, Route } from 'react-router-dom'
+import Homepage from './components/homepage/Homepage'
+import Presentation from './components/presentation/Presentation'
+import Formation from './components/formation/Formation'
+import Partage from './components/partage/Partage'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+          <Navbar />
+          <Route exact path="/" component={Homepage} />
+          <Route path="/presentation" component={Presentation} />
+          <Route path="/formation" component={Formation} />
+          <Route path="/partage" component={Partage} />
+          <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
