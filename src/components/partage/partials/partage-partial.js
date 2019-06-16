@@ -3,12 +3,12 @@ import '../css/partage.css';
 
 function Partage(props) {
     return (
-      <span>
+      <React.Fragment>
         <img src={props.imgSrc} />
-        <h3>{props.title}</h3>
+        <h4>{props.title}</h4>
         <p>{props.description}</p>
         <button className="btn btn-info">{props.buttonText}</button>
-      </span>
+      </React.Fragment>
     );
 }
 

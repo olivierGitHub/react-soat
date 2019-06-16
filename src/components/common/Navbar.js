@@ -6,7 +6,7 @@ function Navbar() {
   return (
       <nav className="navbar navbar-expand-sm navbar-color">
         <div className="container">
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/" className="nav-link" activeClassName="activeRoute">
             <img className="soat-logo" src="soat-logo.png" />
           </NavLink>
           <ul className="navbar-nav">
@@ -21,7 +21,7 @@ function Navbar() {
             </li>
           </ul>
           <form className="form-inline">
-            <input className="form-control mr-sm-2" type="text" placeholder="rechercher" />
+            <input className="form-control" type="text" placeholder="rechercher" />
             <button className="btn btn-info" type="submit">Recherche</button>
           </form>
         </div>

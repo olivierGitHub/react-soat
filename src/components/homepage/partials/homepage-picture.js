@@ -4,10 +4,10 @@ import '../css/homepage.css';
 function HomepagePicture() {
 
   return (
-        <span>
+        <React.Fragment>
           <img className="soat-photo" src="soat-photo.png" />
           <p>Mieux se connaître et mieux appréhender sa relation aux autres.</p>
-        </span>
+        </React.Fragment>
   );
 }
 

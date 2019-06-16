@@ -3,10 +3,10 @@ import '../css/homepage.css'
 
 function HomepageInfo(props) {
     return (
-      <span>
+      <React.Fragment>
         <h4>{props.title}</h4>
         <p>{props.description}</p>
-      </span>
+      </React.Fragment>
     )
 }
 
